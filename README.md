@@ -95,3 +95,13 @@ Settings
 
 The "settings" link provides access to additional configuration options.
 Feel free to click on the respective links to explore each feature. For instance, clicking on "budgets" will take you to the budgeting section, and "Tax calculator" will open the GST Calculator. Explore the Kuber Financial Management System efficiently with this user-friendly navigation bar.
+
+**Team**
+
+***AlgoGen***
+
+*Rahul Yadav*
+*Rahul Acharya*
+*Rajiv Sharma*
+
+
