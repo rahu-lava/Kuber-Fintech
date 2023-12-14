@@ -52,7 +52,7 @@ For the convenience of examiners, we have created demo accounts that can be used
 
 ```diff
 
- Username: admin.
+ Username: admin
 
  Password: admin
 
