@@ -8,13 +8,6 @@
 
 You can use the diff language tag to generate some colored text:
 
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
 **Description**: 
 
 *Kuber*, our Collaborative Budgeting Fintech Application, draws inspiration from the Hindu god of wealth, symbolizing prosperity and financial abundance. This robust financial management system is meticulously crafted to streamline budgeting, expense tracking, and financial planning, offering enhanced efficiency and user convenience. We have harnessed the power of HTML, CSS, and JavaScript, with Firebase serving as our trustworthy database.
@@ -56,13 +49,17 @@ Our Collaborative Budgeting Fintech Application aims to revolutionize personal f
 For the convenience of examiners, we have created demo accounts that can be used to explore and evaluate the features of our financial management system. Please use the following credentials:
 
 
-<font color="red">- **Username:** admin. </font>
-<font color="red">- **Password:** admin</font>
+
+```diff
+
+-  **Username:** admin.
+
+- **Password:** admin
 
 
+! **OTP** : 123456 (Only applicable while Reseting Password)
 
-<font color="red">- **OTP** : 123456 (Only applicable while Reseting Password)</font>
-
+```
 
 
 
