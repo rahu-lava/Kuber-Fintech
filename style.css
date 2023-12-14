@@ -1,0 +1,217 @@
+
+
+main {
+    padding: 20px;
+}
+.upper {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 12px;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 12px;
+}
+.upper span {
+    font-size: 16px;
+    font-weight: 900;
+}
+.upper p {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.upper img {
+    border-radius: 50%;
+}
+.upper-next , .upper-next-two {
+    width: 100%;
+    padding: 18px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 18px;
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.upper-next p , .upper-next-two p{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    opacity: 0.7;
+    /* align-items: center; */
+}
+.upper-next p span , .upper-next-two p span{
+    font-weight: 800;
+    font-size: 14px
+}
+.upper-next div:nth-child(1) , .upper-next-two div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+}
+.upper-next div:nth-child(1) {
+    align-items: center;
+
+}
+.seemore ,.manage-budget {
+    font-weight: 600;
+    color: #150152;
+}
+.upper-next div:nth-child(2){
+    color: #62ebb8;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+.upper-next-two .first span{
+    display: flex;
+    /* justify-items:center ; */
+    align-items: center;
+}
+.dot , .dot1, .dot2{
+    width: 10px ;
+    background-color: #150152;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+.dot1 {
+    background-color: #350bb6e3;
+}
+.dot2 {
+    background-color: #4d16f3d7;
+}
+.upper-next-two .first , .second{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 600;
+
+}
+.upper-next-two div:nth-child(2) span::before{
+    width: 10px ;
+    background-color: #150152;
+    height: 10px;
+    border-radius: 50%;
+}
+.upper-next-two .manager {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+
+/* style for chart one */
+.chart-login_container {
+    position: relative;
+    max-width: 400px; /* Adjust the max width as needed */
+    max-height: 250px; /* Adjust the max height as needed */
+}
+.highlightColor{
+    background-color: rgb(209, 241, 241);
+}
+#myLineChart {
+    max-width: 450px;
+    max-height: 250px;
+}
+.commonButton{
+    border-radius: 7px;
+}
+
+.chart-buttons {
+    position: relative;
+    top: -3px;
+    left: 160px;
+}
+
+button {
+    margin: 5px;
+    padding: 5px;
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+/* button:hover{
+    background-color:aliceblue;
+    border-radius: 5px;
+} */
+/* style for donut chart */
+.chart-container1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#myDonutChart {
+    max-width: 150px;
+    max-height: 150px;
+}
+.upper-third {
+    width: 100%;
+    height: 35vh;
+    padding: 22px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 16px;
+    margin-top: 14px;
+    overflow: auto;
+}
+.upper-third::-webkit-scrollbar{
+    display: none;
+}
+.upper-third div:nth-child(1){
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    gap: 22px;
+    margin-bottom: 22px;
+}
+.upper-third div:nth-child(1) span:nth-child(1){
+
+     margin-right: auto;
+}
+.upper-third div:nth-child(1) span:nth-child(2){
+    color: #150152; 
+}
+
+.chart-header{
+    border-top: 1px solid rgba(0, 0, 0, 0.205);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+    color: #150152;
+}
+.chart-header, .card {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+}
+
+.chart-header p, .card p {
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;   
+    text-transform: capitalize;
+}
+
+.card p:last-child {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card i {
+    color: #333;
+}
+/* Add this to your existing CSS */
+header#mainHeader {
+    transition: width 0.3s ease-in-out;
+}
+
+header#mainHeader.collapsed {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+}

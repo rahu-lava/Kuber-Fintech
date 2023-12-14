@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Login Form Using HTML And CSS Only</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+
+h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+
+span {
+	font-size: 12px;
+}
+
+a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+button {
+	border-radius: 20px;
+	border: 1px solid #1e0b73;
+	background-color: #1e0b73;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+    margin-top: 10px;
+}
+
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.login_container {
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+.form-login_container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+}
+
+.log-in-login_container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+
+.overlay_sign_container {
+    display: inline-block;
+	position: absolute;
+	background-repeat: no-repeat;
+	top: 20%;
+	left: 45%;
+}
+
+
+
+</style>
+<body>
+	<div class="login_container" id="login_container">
+		<div class="form-login_container log-in-login_container">
+			<form action="#">
+				<h2 id="heading">Forget Password</h2>
+				<div class="social-login_container">
+				</div>
+				<span>or use your account</span>
+				<input type="email" placeholder="Email" id="email" />
+                <div id = "name_error" style="color: red;font-size: small;"></div>
+				<!-- <input type="password" placeholder="OTP" required /> -->
+                <div id="remove">
+                    <button id="btn"> <a href="" style="color: white; " >Verify</a></button>
+                </div>
+                <a href=`create_password.html?data=${user_name}` id="new_tab"></a>
+			</form>
+		</div>
+		<div class="overlay_sign_container">
+            <img src="forgot_password.svg" width=400px>x
+               </div>
+           </div>
+	</div>
+
+
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+
+        const firebaseConfig = {
+          apiKey: "AIzaSyDIKNkXhNi8nmKnx3hG1WXssrOOIBLmTEo",
+          authDomain: "kuber-fintech.firebaseapp.com",
+          databaseURL: "https://kuber-fintech-default-rtdb.firebaseio.com",
+          projectId: "kuber-fintech",
+          storageBucket: "kuber-fintech.appspot.com",
+          messagingSenderId: "185071308716",
+          appId: "1:185071308716:web:4b5439029530aac7a23409",
+          measurementId: "G-FWHK5SB5QY"
+        };
+      
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+        import {getDatabase,ref,get,set,child,update,remove} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+        const db = getDatabase();
+
+
+
+        const heading = document.getElementById('heading');
+        const email = document.getElementById('email');
+        let   e_val = email.value;
+        console.log(e_val);
+        
+        const button = document.getElementById('btn');       
+        const higherLevelNodeRef = ref(db, 'User');
+        let user_name ;
+        function Check_email(){
+            let flag = true ;
+                get(higherLevelNodeRef).then((snapshot) => {
+                    if (snapshot.exists()) {
+                        const data = snapshot.val();
+                        // Iterate through data to find folders
+                        for (const folderName in data) {
+                            if (data.hasOwnProperty(folderName)) {
+                                const dbref = ref(db);
+                                const nameValue = folderName.trim();
+                                const name_error = document.getElementById('name_error');
+                                // alert('User'+ name.value);
+                                get(child(dbref, 'User/'+ nameValue)).then((snapshot) => {
+                                    
+                                    let sev_email = snapshot.val().Email.trim();
+                                    // alert(sev_email);
+                                    // alert(e_val);
+                                    if (sev_email == e_val) {
+                                        // alert(sev_email + ' inside12');
+                                        email.value="";
+                                        email.placeholder = 'OTP';
+                                        flag = false;
+                                        name_error.innerHTML='';  
+                                        const parentElement = document.getElementById('remove');
+                                        // Get a reference to the button element
+                                        const buttonElement = parentElement.querySelector('button');
+                                        // Remove the button element from the parent
+                                        parentElement.removeChild(buttonElement);  
+                                        user_name = nameValue;   
+                                                
+                                    }
+                                     else if(flag) {
+                                    name_error.innerHTML='Bad Credential';
+                                    }
+                                }).catch((error) => {
+                                    console.error("Error selecting data:", error);
+                                    // alert("Something went wrong!");
+                                });
+                            }
+                        }
+                    } else {
+                        console.log('Node does not exist.');
+                    }
+                }).catch((error) => {
+                    console.error('Error reading data:', error);
+                });
+    }
+    
+        function otp_verification(){
+            if(e_val == 123456){
+                // alert(user_name); 
+                const anchor = document.getElementById('new_tab');
+                const dataToSend = { key: user_name };
+
+                // Convert data to a query string
+                const queryString = new URLSearchParams(dataToSend).toString();
+
+                // Attach the query string to the link's href
+                anchor.href = `create_password.html?${queryString}`;
+                anchor.click();
+                
+            }
+        }
+    button.addEventListener('click',function(){
+        event.preventDefault(); 
+        // alert(e_val);
+        Check_email();
+        
+
+    })
+    email.addEventListener('input', function () {
+                // This function will be called whenever the value of the input changes
+                // console.log('Input value changed:', myInput.value);
+                e_val = email.value;
+
+            });
+        
+        // placeholder_1.placeholder = 'OTP'
+
+    setInterval(otp_verification, 1000);
+
+    </script>
+</body>
+</html>

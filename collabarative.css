@@ -1,0 +1,173 @@
+main {
+    padding: 28px;
+    width:100%;
+    height: auto;
+
+}
+main .collab-header {
+    text-align: center;
+    background-color:rgba(128, 128, 128, 0.116) ;
+    padding: 8px;
+    border-radius: 12px;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    /* font-weight: 600; */
+}
+.whole-container {
+    display: flex;
+    gap: 18px;
+    justify-content: space-between;
+    background-color: transparent;
+    margin-top: 5%;
+}
+.collab-middle {
+    width: 100%;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 25px;
+    align-content: space-between;
+}
+.collab-middle-first {
+    display: flex   ;
+    justify-content: space-between;
+    /* height: ; */
+    /* width: 100%; */
+    height:40vh
+}
+.collab-middle-second {
+    width: 100%;
+    height: 40vh;
+    padding: 15px;
+    /* color: rgba(128, 128, 128, 0.178); */
+    display: flex;
+    /* flex-direction: column; */
+    overflow: auto;
+    justify-content: space-between;
+}
+.collab-middle-second::-webkit-scrollbar{
+    display: none;
+}
+.collab-middle-next {
+    border-radius: 25px;
+    width: 100%;
+    height:80vh;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    /* gap: 45px; */
+    align-content: center;
+    flex-direction: column;
+}
+/* .collab-middle-next i{
+    margin-top: auto;
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+} */
+button{
+    background-color: #150152;
+    padding: 8px 18px; 
+    color: white;
+    border-radius:8px;
+    border: none;
+}
+/* .card , .card1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+} */
+.card , .card1{
+    padding: 12px ;
+    color: #150152;
+    text-align: center;
+    min-width: 200px;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.card2 , .card3 {
+    width: 100%;
+    height: 30vh;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.card3 {
+    align-items: end;
+}
+/* Apply basic styles to input text */
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    border:1px solid #150152;
+    margin-top: auto;
+    /* position: relative; */
+    font-size: 1.2em;
+    font-weight: 600;
+}
+/* Optional: Add some additional styling for focus state */
+input[type="text"]:focus {
+    border-color: #150152; /* Change the border color when focused */
+    box-shadow: #150152; /* Add a subtle box shadow */
+    outline: none; /* Remove default focus outline */
+}
+.chat ,.chart-section {
+    width: 100%;
+    height: 70vh;
+    padding: 22px;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 4px;
+    overflow: auto;
+}
+.chart-section::-webkit-scrollbar{
+    display: none;
+}
+.male , .female {
+    width: 100%;
+    height: auto;
+
+}
+.female, .male {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.male {
+    align-items: start;
+}
+.collab-middle-next .middle-next-one{
+    width: 100%;
+    height: 50px;
+    background-color: #4122a094;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    
+}
+.middle-next-one img {
+    border-radius: 50%;
+}
+.middle-next-one span{
+    color: white;
+    margin-right: 10px;
+}
+.middle-next-one div:nth-child(1){
+    display: flex;
+    align-items: center;
+}
+.middle-next-one div:nth-child(2){
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}

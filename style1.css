@@ -1,0 +1,108 @@
+.main  {
+
+    display: flex;
+    place-content: center;
+    align-items: center;
+    margin:0px auto;
+}
+main {
+    width: 400px;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    /* place-content: center; */
+    justify-content: center;
+    margin: 22px auto;
+    gap: 24px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 10px; */
+    font-size: 1em;
+    font-weight: 600;
+}
+.middle-text {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+hr{
+    height: 1px;
+    background-color: grey;
+    opacity: 0.3;
+    /* color: white; */
+}
+.card-1 {
+    margin-top: 8px;
+}
+.card-1  , .card-2{
+    /* margin-bottom: 14px; */
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    gap: 11px;
+}
+.card-1 i {
+    margin-top: 5px;
+}
+
+.card-1 span  , .card-2 span{
+    font-weight: 700;
+    /* margin-left: 6px; */
+}
+.card-1 p , .card-2 p{
+    /* font-size: ; */
+    color: grey;
+}
+.terms {
+    text-align: center;
+    font-size: 0.7em;
+    /* color: black; */
+    font-weight: 600;
+}
+.terms span {
+    text-decoration: underline;
+}
+button {
+    background-color: #150152;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+/* Assuming your SVG is within a container with the class "svg-container" */
+.svg-container {
+    display: grid;
+    place-items: center;
+}
+
+/* Additional styling for the SVG, if needed */
+.svg-container svg {
+    width: 80%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Desktop Media Query */
+@media only screen and (min-width: 568px) {
+    main {
+        /* margin: 0;
+         */
+         max-width: 500px;
+         height: auto;
+         border: none;
+         border-radius: 22px;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         padding: 16px;
+         gap: 16px;
+    }
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: center;
+        align-content: center; */
+    }
+    /* Add more desktop-specific styles here */
+}

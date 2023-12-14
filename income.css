@@ -1,0 +1,162 @@
+
+.first-div {
+    width: auto;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.first-div span:nth-child(1){
+    font-size: 0.9em ;
+    font-weight: 600;
+}
+.first-div span:nth-child(2){
+    color: #150152;
+    font-weight: 600;
+    font-size: 18px;
+}
+.first-div button {
+    padding: 4px 8px;
+    background-color: #5f45c7;
+    border: none;
+    border-radius: 4px ;
+    font-size: 16px;
+    /* font-weight: 600; */
+    color: white;
+}
+.second-div {
+display: flex;
+justify-content: center;
+margin-top: 5%;
+}
+.step-verifier {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-items: center;
+}
+.step-verifier div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.step-verifier div  span {
+    font-size: 13px;
+    font-weight: 600;
+}
+.step {
+    position: relative;
+    padding: 4px 12px;
+    color: #fff;
+    border: 1px solid #5f45c7;
+    /* color: #5f45c7; */
+    border-radius: 50%;
+    color: black;
+    font-weight: 600;
+}
+
+.line {
+    /* flex-grow: 1; */
+    width: 60px;
+    height: 2px;
+    background-color: #5f45c7;
+    margin-bottom: 20px;
+}
+header#mainHeader {
+    transition: width 0.5s ease-in-out;
+}
+
+/* header#mainHeader.collapsed {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+} */
+.ask {
+    width: auto;
+    padding: 12px ;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 3%;
+    border-radius: 7px;
+}
+
+.income-details , .expense-details , .saving-details{
+    /* max-width: 400px; */
+    margin: 5%;
+}
+.expense-details {
+    display: none;
+}
+.saving-details{
+    display: none;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color:#150152;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* style for donut chart */
+.chart-container1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#myDonutChart {
+    max-width: 150px;
+    max-height: 150px;
+}
+.expense-details-show {
+    /* min-width: 400px; */
+    width:100%;
+    margin-left: 50px;
+}
+.expense-details-show .manager {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+.dot , .dot1, .dot2{
+    width: 10px ;
+    background-color: #150152;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+.dot1 {
+    background-color: #350bb6e3;
+}
+.dot2 {
+    background-color: #4d16f3d7;
+}
+.expense-details-show .first , .second{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 600;
+
+}

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body , html {
+    width: 100%;
+    /* height: 100%; */
+    height:auto;
+    background-color: white;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+    gap: 26px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 10px; */
+    font-size: 1em;
+    font-weight: 600;
+    align-items: center;
+
+}
+.search-container{
+    /* width: 290px; */
+    width: auto;
+    display: block;
+    margin: 0px auto;
+    /* padding: 0px; */
+  }
+  
+  input#search-bar{
+    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #D0CFCE;
+    outline: none;
+    border-radius: 16px;
+   }
+  
+  .search-icon{
+    position: relative;
+    float: right;
+    width: 75px;
+    height: 75px;
+    top: -62px;
+    right: -15px;
+  }
+h3 {
+    margin-top: -79px;
+}
+.banks {
+
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    width: auto;
+    height: 300px;
+    overflow: auto;
+}
+.banks::-webkit-scrollbar {
+    display: none;
+}
+  .banks div {
+    width: auto;
+    padding: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px;
+  }
+  .banks div span {
+    margin-left: 8px;
+  }
+/* Desktop Media Query */
+@media only screen and (min-width: 568px) {
+    main {
+        /* margin: 0;
+         */
+         max-width: 500px;
+         height: auto;
+         border: none;
+         border-radius: 22px;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         padding: 16px;
+         gap: 16px;
+    }
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    /* Add more desktop-specific styles here */
+}

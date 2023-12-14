@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Div Every 5 Seconds</title>
+</head>
+<body>
+
+<div id="login_container">
+    <!-- Existing content in the login_container -->
+    <div class="new_transaction_box1">10,000</div>
+    <div class="new_transaction_box2">50,000</div>
+    <div class="new_transaction_box3">5,000</div>
+    <div class="new_transaction_box4">3,000</div>
+</div>
+
+<script>
+    // Your code here
+
+    // Example: Add a new div to the login_container every 5 seconds
+    setInterval(function () {
+        var login_container = document.getElementById('login_container');
+        var lastdiv = login_container.lastElementChild;
+        var newDiv = document.createElement('div');
+        var remove_div = document.getElementById('')
+        newDiv.textContent = 'New Div!';
+        // Add the new div to the login_container
+        login_container.prepend(newDiv);
+        login_container.removeChild(lastdiv);
+
+    }, 3000); // 5000 milliseconds = 5 seconds
+</script>
+
+</body>
+</html>

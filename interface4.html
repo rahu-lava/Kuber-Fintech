@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="interface4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>banking details</title>
+</head>
+<body>
+    <main>
+        <div class="header">
+            <i class="fa-solid fa-arrow-left"></i> 
+        <span>AlgoGen</span>
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+    <form class="search-container">
+        <input type="text" id="search-bar" placeholder="search ...">
+        <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+      </form>
+    <h3>
+        select your bank
+    </h3>
+    <div class="banks">
+        <div>
+            <i class="fa-solid fa-building-columns"></i>
+            <span>State Bank of India</span>
+        </div>
+        <div>
+            <i class="fa-solid fa-building-columns"></i>
+            <span>HDFC Bank</span>
+        </div>
+        <div>
+            <i class="fa-solid fa-building-columns"></i>
+            <span>ICICI Bank</span>
+        </div>
+        <div>
+            <i class="fa-solid fa-building-columns"></i>
+            <span>Punjab National Bank</span>
+        </div>
+        <div>
+            <i class="fa-solid fa-building-columns"></i>
+            <span>Axis Bank</span>
+        </div>
+        <div>
+            <i class="fa-solid fa-building-columns"></i>
+            <span>Canara Bank</span>
+        </div>
+        <div>
+            <i class="fa-solid fa-building-columns"></i>
+            <span>Bank of Baroda</span>
+        </div>
+        <div>
+            <i class="fa-solid fa-building-columns"></i>
+            <span>Kotak Mahindra Bank</span>
+        </div>
+    </div>
+    
+    </main>
+    <script>
+                document.addEventListener('DOMContentLoaded', function () {
+            const bankContainers = document.querySelectorAll('.banks');
+
+            bankContainers.forEach((bankContainer) => {
+                bankContainer.addEventListener('click', function () {
+                    window.open("interface3.html" , '_self')
+                });
+            });
+        });
+    </script>
+</body>
+</html>
