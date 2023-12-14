@@ -46,10 +46,17 @@ Our Collaborative Budgeting Fintech Application aims to revolutionize personal f
 
 For the convenience of examiners, we have created demo accounts that can be used to explore and evaluate the features of our financial management system. Please use the following credentials:
 
-- **Username:** admin
-- **Password:** admin
 
-- **OTP** : 123456 (Only applicable while Reseting Password)
+<font color="red">- **Username:** admin. </font>
+<font color="red">- **Password:** admin</font>
+
+
+
+<font color="red">- **OTP** : 123456 (Only applicable while Reseting Password)</font>
+
+
+
+
 
 
 **Note:** These demo accounts are specifically created for evaluation purposes and may have limited access to certain features. Examiners are encouraged to explore various functionalities and scenarios using these accounts.
