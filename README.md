@@ -6,7 +6,6 @@
 
 
 
-
 **Description**: 
 
 *Kuber*, our Collaborative Budgeting Fintech Application, draws inspiration from the Hindu god of wealth, symbolizing prosperity and financial abundance. This robust financial management system is meticulously crafted to streamline budgeting, expense tracking, and financial planning, offering enhanced efficiency and user convenience. We have harnessed the power of HTML, CSS, and JavaScript, with Firebase serving as our trustworthy database.
@@ -37,10 +36,6 @@ Implement Firebase authentication to ensure a secure and seamless login process,
 **Demo Account for Evaluation**:
 
 For the convenience of examiners and potential users, we have created a demo account, providing a hands-on experience to understand the application's functionality.
-
-**Comprehensive Documentation**:
-
-A well-documented project to guide users and developers, covering installation, usage, and contributing guidelines.
 
 **Contribution Opportunities**:
 
