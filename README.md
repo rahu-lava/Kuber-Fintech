@@ -4,7 +4,7 @@
 ![Group 1 (1)](https://github.com/rahu-lava/Kuber-Fintech/assets/113875289/c974cc24-1da1-4357-ba5b-a6d5ab266ac5)
 
 
-![Group 1](https://github.com/rahu-lava/Kuber-Fintech/assets/113875289/0e652c54-be3b-4662-b31d-02a5a034b8fa)
+
 
 
 **Description**: 
