@@ -100,8 +100,8 @@ Feel free to click on the respective links to explore each feature. For instance
 
 ***AlgoGen***
 
-*Rahul Yadav*
-*Rahul Acharya*
-*Rajiv Sharma*
+*Rahul Yadav*<br>
+*Rahul Acharya*<br>
+*Rajiv Sharma*<br>
 
 
