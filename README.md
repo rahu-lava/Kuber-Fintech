@@ -54,7 +54,7 @@ For the convenience of examiners, we have created demo accounts that can be used
 - **Username:** admin
 - **Password:** admin
 
-- **OTP** : 123456 (Use this OTP for Forget Password)
+- **OTP** : 123456 (Only applicable while Reseting Password)
 
 
 **Note:** These demo accounts are specifically created for evaluation purposes and may have limited access to certain features. Examiners are encouraged to explore various functionalities and scenarios using these accounts.
