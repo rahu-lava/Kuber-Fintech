@@ -53,3 +53,30 @@ For the convenience of examiners, we have created demo accounts that can be used
 
 
 **Note:** These demo accounts are specifically created for evaluation purposes and may have limited access to certain features. Examiners are encouraged to explore various functionalities and scenarios using these accounts.
+
+
+
+**Usage**:
+
+To navigate through the various sections and tools in the Kuber Financial Management System, utilize the intuitive navigation bar located at the top of the page. Here's a breakdown of its main features:
+
+Main Section
+
+Dashboard: View an overview of your financial data.
+Accounts: Access and manage your accounts.
+Budgets: Navigate to the budgeting section.
+Collaborative Budgeting: Explore collaborative budgeting features.
+
+Tools Section
+
+The "TOOLS" section offers specialized tools for financial management:
+
+Tax Calculator: Calculate taxes effortlessly.
+Expense: Manage and track your expenses.
+Budgeting: Access tools for effective budget management.
+Finance Planning: Plan your finances strategically.
+
+Settings
+
+The "settings" link provides access to additional configuration options.
+Feel free to click on the respective links to explore each feature. For instance, clicking on "budgets" will take you to the budgeting section, and "Tax calculator" will open the GST Calculator. Explore the Kuber Financial Management System efficiently with this user-friendly navigation bar.
