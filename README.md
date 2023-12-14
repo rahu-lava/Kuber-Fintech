@@ -52,12 +52,12 @@ For the convenience of examiners, we have created demo accounts that can be used
 
 ```diff
 
--  **Username:** admin.
+ Username: admin.
 
-- **Password:** admin
+ Password: admin
 
 
-! **OTP** : 123456 (Only applicable while Reseting Password)
+ OTP : 123456 (Only applicable while Reseting Password)
 
 ```
 
