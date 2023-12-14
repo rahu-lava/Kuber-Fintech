@@ -1,6 +1,8 @@
 
 # *Kuber : Your Wealth Guru*
 
+![Group 1](https://github.com/rahu-lava/Kuber-Fintech/assets/113875289/0e652c54-be3b-4662-b31d-02a5a034b8fa)
+
 
 **Description**: 
 
